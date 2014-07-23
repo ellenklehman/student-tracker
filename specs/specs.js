@@ -34,5 +34,11 @@ describe("Assignment", function() {
 			currentAssignment.initialize("Javascript assignment", 100);
 			currentAssignment.totalPoints.should.equal(100);
 		});
+
+		it("sets the student's assignment value", function() {
+			var currentAssignment = Object.create(Assignment);
+			currentAssignment.initialize("Javascript assignment", 100, 75);
+			currentAssignment.studentPoints.should.equal(75);
+		});
 	});
 });
