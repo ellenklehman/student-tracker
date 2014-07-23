@@ -6,5 +6,11 @@ describe("student", function() {
 			myStudent.firstName.should.equal("Sally");
 			myStudent.lastName.should.equal("Jones");
 		});
+
+		it("sets up an empty array for the assignments property", function() {
+			var myStudent = Object.create(Student);
+			myStudent.initialize("Sally", "Jones");
+			myStudent.assignments.should.eql([]);
+		});
 	});
 });
