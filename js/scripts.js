@@ -11,5 +11,9 @@ var Assignment = {
 		this.assignmentName = initializedAssignment;
 		this.totalPoints = initializedTotalPoints;
 		this.studentPoints = initializedStudentPoints;
+	},
+	percentage: function() {
+		var output = this.studentPoints/this.totalPoints * 100;
+		return output;
 	}
 };

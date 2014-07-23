@@ -41,4 +41,12 @@ describe("Assignment", function() {
 			currentAssignment.studentPoints.should.equal(75);
 		});
 	});
+
+	describe("percentage", function() {
+		it("creates an assignment percentage", function() {
+			var currentAssignment = Object.create(Assignment);
+			currentAssignment.initialize("Javascript assignment", 100, 75);
+			currentAssignment.percentage().should.equal(75);
+		});
+	});
 });
