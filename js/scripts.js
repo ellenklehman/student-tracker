@@ -6,3 +6,8 @@ var Student = {
 		this.assignments = [];
 	}
 };
+var Assignment = {
+	initialize: function(initializedAssignment) {
+		this.assignmentName = initializedAssignment;
+	}
+}

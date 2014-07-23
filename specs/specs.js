@@ -20,3 +20,13 @@ describe("student", function() {
 		});
 	});
 });
+
+describe("Assignment", function() {
+	describe("initialize", function() {
+		it("sets the name of the assignment", function () {
+			var currentAssignment = Object.create(Assignment);
+			currentAssignment.initialize("Javascript assignment");
+			currentAssignment.assignmentName.should.equal("Javascript assignment");
+		});
+	});
+});
