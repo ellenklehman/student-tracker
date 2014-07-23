@@ -28,5 +28,11 @@ describe("Assignment", function() {
 			currentAssignment.initialize("Javascript assignment");
 			currentAssignment.assignmentName.should.equal("Javascript assignment");
 		});
+
+		it("sets the total assignment value", function() {
+			var currentAssignment = Object.create(Assignment);
+			currentAssignment.initialize("Javascript assignment", 100);
+			currentAssignment.totalPoints.should.equal(100);
+		});
 	});
 });

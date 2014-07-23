@@ -7,7 +7,8 @@ var Student = {
 	}
 };
 var Assignment = {
-	initialize: function(initializedAssignment) {
+	initialize: function(initializedAssignment, initializedTotalPoints) {
 		this.assignmentName = initializedAssignment;
+		this.totalPoints = initializedTotalPoints;
 	}
-}
+};
