@@ -1,4 +1,18 @@
-describe("student", function() {
+describe("Class", function() {
+	describe("initialize", function() {
+		it("sets the name of the class", function () {
+			var newClass = Object.create(Class);
+			newClass.initialize("History");
+			newClass.initialize.should.equal("History");
+		});
+			it("sets a class period property", function() {
+			var newClass = Object.create(Class);
+			newClass.initialize("History", 2);
+			newClass.period.should.equal(2);
+		});
+	});
+});
+describe("Student", function() {
 	describe("initialize", function() {
 		it("sets a first and last name", function() {
 			var myStudent = Object.create(Student);
